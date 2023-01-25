@@ -1,0 +1,27 @@
+* {
+    font-family: 'Verdana';
+}
+
+header {
+    background-image: url("../img/design1_image1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
