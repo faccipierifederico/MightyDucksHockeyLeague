@@ -91,7 +91,7 @@ section p {
   height: 100%;
 }
 
-.imagen:hover{
+.imagen:hover {
   transform: scale(1.5);
 }
 
