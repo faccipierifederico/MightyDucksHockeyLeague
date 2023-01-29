@@ -91,6 +91,10 @@ section p {
   height: 100%;
 }
 
+.imagen:hover{
+  transform: scale(1.5);
+}
+
 footer {
   position: relative;
   top: 300px;
