@@ -23,11 +23,13 @@ nav {
   position: relative;
   bottom: 90px;
   left: 85%;
+  background: none;
 }
 
 nav a {
   padding: 10px;
   text-decoration: none;
+  background: none;
 }
 
 a:hover {
@@ -63,19 +65,21 @@ section p {
 .container {
   margin-top: 15px;
   margin-bottom: 70px;
-  width: 90vw;
+  width: 99vw;
   height: 26vh;
-  position: relative;
-  left: 5%;
 }
 
 .container h3 {
   text-align: center;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
+  text-shadow: 1px 1px black;
 }
 
 .div {
-  height: 40vh;
+  padding: 1%;
+  padding-left: 2%;
+  height: 50vh;
+  width: 32vw;
   display: inline-block;
 }
 
