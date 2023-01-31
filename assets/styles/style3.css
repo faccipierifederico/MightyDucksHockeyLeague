@@ -1,0 +1,113 @@
+* {
+  font-family: "Segoe UI Historic";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: azure;
+}
+
+h1 {
+  font-family: "Cambria";
+  font-size: 3em;
+  padding-left: 5%;
+  border-bottom: 2px solid black;
+}
+
+.div-header {
+  background-image: url("../img/design1_image2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  border-bottom: 2px solid black;
+}
+
+section h2 {
+  padding: 1%;
+  padding-left: 10%;
+}
+
+nav {
+  display: inline-block;
+  position: relative;
+  bottom: 90px;
+  left: 85%;
+  background: none;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  background: none;
+}
+
+a:hover {
+  color: red;
+  transition: 1s;
+  font-weight: bold;
+}
+
+.active {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+section {
+  margin: 2%;
+}
+
+section h3 {
+  padding-left: 5%;
+}
+
+section p {
+  margin-bottom: 2%;
+  padding-left: 7%;
+}
+
+.logo {
+  display: none;
+}
+
+.container {
+  margin-top: 15px;
+  margin-bottom: 70px;
+  width: 99vw;
+  height: 26vh;
+}
+
+.container h3 {
+  text-align: center;
+  padding-bottom: 1%;
+  text-shadow: 1px 1px black;
+}
+
+.div {
+  padding: 1%;
+  padding-left: 2%;
+  height: 50vh;
+  width: 32vw;
+  display: inline-block;
+}
+
+.imagen {
+  margin: 5px;
+  border: 1px solid;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen:hover {
+  transform: scale(1.5);
+}
+
+footer {
+  position: relative;
+  top: 300px;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
