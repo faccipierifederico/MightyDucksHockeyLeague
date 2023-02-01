@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/styles/style1.css"> -->
+    <link rel="stylesheet" href="./assets/styles/style2.css"> 
+    <!-- <link rel="stylesheet" href="./assets/styles/style3.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/Logo.ico" type="image/x-icon">
     <title>Home Page MDHL</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <header>
-        <h1>Mighty Ducks Hockey League</h1>
-
-        <figure>
-
-            <img src="./assets/Logo.png" alt="Logo MDHL" width="299px">
-        </figure>
-
-        <a href="#">Home</a>
-        <a href="./about.html">About MDHL</a>
-        <a href="./contact.html">Contact</a>
+      <h1>Mighty Ducks Hockey League</h1>
+      <div class="div-header"></div>
     </header>
 
-
     <main>
-        <section>
-
-            <h2>Upcoming Events</h2>
-
-            <figure>
-
-                <img src="./assets/hockey1.jpg" alt="Mighty Ducks Hockey League 1" width="350px">
-            </figure>
-
+      <section>
+        <h2>Upcoming Events</h2>
+        <div id="nav-article">
+          <nav>
+            <a href="#" class="active">Home</a>
+            <a href="./about.html">About MDHL</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+          <figure>
+            <img class="logo" src="./assets/img/Logo.png" alt="Logo MDHL">
+          </figure>
+          <div class="article">
             <article>
-                <h3>August 4</h3>
-                <p>MDSL Fundraiser</p>
+              <h3 class="italic">August 4</h3>
+              <p>MDSL Fundraiser</p>
             </article>
 
             <article>
-                <h3>August 16</h3>
-                <p>Season Kick-off: Meet the Teams</p>
+              <h3 class="italic">August 16</h3>
+              <p>Season Kick-off: Meet the Teams</p>
             </article>
 
             <article>
-                <h3>September 1</h3>
-                <p>First Game of the Season (Check Game Schedule for details)</p>
+              <h3 class="italic">September 1</h3>
+              <p>First Game of the Season (Check Game Schedule for details)</p>
             </article>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <div class="container">
+        <h3>Epic moments of our last Season</h3>
+        <div class="img div">
+          <img class="imagen" src="./assets/img/hockey1.jpg" alt="MDHL 1">
+        </div>
+        <div class="img div">
+          <img class="imagen" src="./assets/img/hockey2.jpg" alt="MDHL 2">
+        </div>
+        <div class="img div">
+          <img class="imagen" src="./assets/img/hockey3.jpg" alt="MDHL 3">
+        </div>
+      </div>
     </main>
 
-
-</body>
+    <footer>
+      <p>Look for us on social media.</p>
+      <p>@2023 · Copyright All · right reserved</p>
+    </footer>
+  </body>
 </html>
