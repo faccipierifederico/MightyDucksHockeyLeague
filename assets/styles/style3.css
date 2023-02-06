@@ -296,6 +296,11 @@ input{
   border-right: none;
 }
 
+input:focus{
+  background-color: #191c32;
+  color:rgb(241, 241, 228);
+}
+
 .names, .city{
   display: flex;
   justify-content: space-around;
