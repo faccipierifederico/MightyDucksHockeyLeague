@@ -43,49 +43,29 @@
           <fieldset class="names">
             <label>
               Player's First Name:
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                placeholder="Jon"
-              />
+              <input type="text" id="first-name" name="first-name" />
             </label>
             <label>
               Last Name:
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                placeholder="Doe"
-              />
+              <input type="text" id="last-name" name="last-name" />
             </label>
           </fieldset>
 
           <fieldset class="street">
             <label>
               Street Address:
-              <input
-                type="text"
-                id="street-address"
-                name="street-address"
-                placeholder="Street name"
-              />
+              <input type="text" id="street-address" name="street-address" />
             </label>
           </fieldset>
 
           <fieldset class="city">
             <label>
               City:
-              <input type="text" id="city" name="city" placeholder="Texas" />
+              <input type="text" id="city" name="city" />
             </label>
             <label>
               Zip Code:
-              <input
-                type="number"
-                id="zip-code"
-                name="zip-code"
-                placeholder="9999"
-              />
+              <input type="text" id="zip-code" name="zip-code" />
             </label>
           </fieldset>
 
@@ -93,18 +73,18 @@
             <fieldset class="birth">
               <label>
                 Bith Date (mm/dd/yyyy):
-                <input type="date" id="birth-date" name="birth-date" />
+                <input type="text" id="birth-date" name="birth-date" />
               </label>
             </fieldset>
             <fieldset class="gender">
               <p>Gender:</p>
               <label>
                 Female
-                <input type="radio" name="gender" id="female" value="female"/>
+                <input type="radio" name="gender" id="female" value="female" />
               </label>
               <label>
                 Male
-                <input type="radio" name="gender" id="male" value="male"/>
+                <input type="radio" name="gender" id="male" value="male" />
               </label>
             </fieldset>
           </div>
@@ -113,27 +93,32 @@
             <p>Grade:</p>
             <label>
               Pre-School
-              <input type="radio" name="grade" id="pre-school" value="pre-school"/>
+              <input
+                type="radio"
+                name="grade"
+                id="pre-school"
+                value="pre-school"
+              />
             </label>
             <label>
               1st
-              <input type="radio" name="grade" id="first" value="first"/>
+              <input type="radio" name="grade" id="first" value="first" />
             </label>
             <label>
               2nd
-              <input type="radio" name="grade" id="second" value="second"/>
+              <input type="radio" name="grade" id="second" value="second" />
             </label>
             <label>
               3rd
-              <input type="radio" name="grade" id="third" value="third"/>
+              <input type="radio" name="grade" id="third" value="third" />
             </label>
             <label>
               4th
-              <input type="radio" name="grade" id="fourth" value="fourth"/>
+              <input type="radio" name="grade" id="fourth" value="fourth" />
             </label>
             <label>
               5th
-              <input type="radio" name="grade" id="fiveth" value="fiveth"/>
+              <input type="radio" name="grade" id="fiveth" value="fiveth" />
             </label>
           </fieldset>
 
@@ -141,30 +126,15 @@
           <h4>Closest School</h4>
 
           <fieldset class="near-school">
-            <label>
-              AJ Katzenmaier
-              <input type="radio" name="near-school" id="aj-katzenmaier" value="aj-katzenmaier"/>
-            </label>
-            <label>
-              Greenbay
-              <input type="radio" name="near-school" id="greenbay" value="greenbay"/>
-            </label>
-            <label>
-              Howard A Yaeger
-              <input type="radio" name="near-school" id="howard-a-yaeger" value="howard-a-yaeger"/>
-            </label>
-            <label>
-              Marjorie P Hart
-              <input type="radio" name="near-school" id="marjorie-p-hart" value="marjorie-p-hart"/>
-            </label>
-            <label>
-              North Elementary
-              <input type="radio" name="near-school" id="north-elementary" value="north-elementary"/>
-            </label>
-            <label>
-              South Elementary
-              <input type="radio" name="near-school" id="south-elementary" value="south-elementary"/>
-            </label>
+            <label for="near-school">Please, select the nearest school</label>
+            <select name="near-school" id="near-school">
+              <option value="aj-katzenmaier">AJ Katzenmaier</option>
+              <option value="greenbay">Greenbay</option>
+              <option value="howard-a-yaeger">Howard A Yaeger</option>
+              <option value="marjorie-p-hart">Marjorie P Hart</option>
+              <option value="north-elementary">North Elementary</option>
+              <option value="south-elementary">South Elementary</option>
+            </select>
           </fieldset>
 
           <h3>What position(s) do you normally play? (Check all that apply)</h3>
@@ -211,31 +181,66 @@
           <fieldset class="uniform-size">
             <label>
               Youth Small
-              <input type="radio" name="uniform-size" id="youth-small" value="youth-small"/>
+              <input
+                type="radio"
+                name="uniform-size"
+                id="youth-small"
+                value="youth-small"
+              />
             </label>
             <label>
               Youth Medium
-              <input type="radio" name="uniform-size" id="youth-medium" value="youth-medium"/>
+              <input
+                type="radio"
+                name="uniform-size"
+                id="youth-medium"
+                value="youth-medium"
+              />
             </label>
             <label>
               Youth Large
-              <input type="radio" name="uniform-size" id="youth-large" value="youth-large"/>
+              <input
+                type="radio"
+                name="uniform-size"
+                id="youth-large"
+                value="youth-large"
+              />
             </label>
             <label>
               Small
-              <input type="radio" name="uniform-size" id="small" value="small"/>
+              <input
+                type="radio"
+                name="uniform-size"
+                id="small"
+                value="small"
+              />
             </label>
             <label>
               Medium
-              <input type="radio" name="uniform-size" id="medium" value="medium"/>
+              <input
+                type="radio"
+                name="uniform-size"
+                id="medium"
+                value="medium"
+              />
             </label>
             <label>
               Large
-              <input type="radio" name="uniform-size" id="large" value="large"/>
+              <input
+                type="radio"
+                name="uniform-size"
+                id="large"
+                value="large"
+              />
             </label>
             <label>
               Extra Large
-              <input type="radio" name="uniform-size" id="extra-large" value="extra-large"/>
+              <input
+                type="radio"
+                name="uniform-size"
+                id="extra-large"
+                value="extra-large"
+              />
             </label>
           </fieldset>
 
@@ -250,9 +255,10 @@
               activities personnel and volunteers, including the facilities used
               for registrant's participation in the programand/or being
               transported to or from MDHL sponsored activities, wich
-              transportation. By signing below, I herebyagree and authorize the
-              above. In addition, by signing below, I also acknowledge that I
-              have read the cancellation policy and agree to its terms.
+              transportation. By entering my name below, I herebyagree and
+              authorize the above. In addition, by entering my name below, I
+              also acknowledge that I have read the cancellation policy and
+              agree to its terms.
             </p>
             <fieldset class="signature">
               <label>
@@ -261,13 +267,13 @@
               </label>
               <label>
                 Date:
-                <input type="date" id="signing-date" name="signing-date" />
+                <input type="text" id="signing-date" name="signing-date" />
               </label>
             </fieldset>
           </div>
 
-          <input class="button" type="submit" value="Submit" />
-          <input class="button" type="reset" value="Reset" />
+          <input class="button" type="submit" value="SUBMIT" />
+          <input class="button" type="reset" value="RESET" />
         </form>
       </div>
 

@@ -281,7 +281,6 @@ form{
 }
 
 fieldset{
-  border-radius: 10px;
   border: none;
   padding: 20px;
   width: 50vw;
@@ -291,9 +290,8 @@ fieldset{
 
 input{
   padding: 10px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border: none;
+  border-bottom: 1px solid #191c32;
 }
 
 input:focus{
@@ -323,6 +321,10 @@ input:focus{
   width: 41vw;
 }
 
+.birth input{
+  width: 12vw;
+}
+
 .birth-gender, .birth-gender fieldset{
   display: flex;
   width: 100%;
@@ -336,10 +338,18 @@ input:focus{
   margin-right: 10%;
 }
 
-.grade, .near-school, .position, .uniform-size{
+.grade, .position, .uniform-size{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+
+.near-school select{
+  margin: 0px 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #191c32;
+  color: rgb(241, 241, 228);
 }
 
 .end-form{
@@ -356,20 +366,25 @@ input:focus{
 }
 
 .button{
-  width: 200px;
-  background-color: beige;
+  color: black;
+  width: 150px;
+  background:rgb(241, 241, 228);
   align-items: center;
   align-self: center;
-  border-radius: 20px;
-  border-bottom: 2px solid red;
-  padding: 10px;
-  font-size: 17px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #4b0f15;
 }
 
 .button:hover{
-  color: white;
+  color: rgb(241, 241, 228);
   background-color: black;
   border: none;
+  border-radius: 10px;
+  border: 1px solid #4b0f15;
 }
 
 .locations{
