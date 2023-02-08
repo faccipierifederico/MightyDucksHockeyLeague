@@ -16,6 +16,7 @@
     />
     <title>Registration Form</title>
   </head>
+
   <body>
     <header>
       <div class="nav-article">
@@ -40,7 +41,7 @@
         <h2>Registration Form</h2>
         <span class="underline-form"></span>
         <form action="./show_data.html" method="get">
-          <fieldset class="names">
+          <fieldset class="personnel">
             <label>
               Player's First Name:
               <input type="text" id="first-name" name="first-name" />
@@ -49,45 +50,47 @@
               Last Name:
               <input type="text" id="last-name" name="last-name" />
             </label>
-          </fieldset>
-
-          <fieldset class="street">
-            <label>
-              Street Address:
-              <input type="text" id="street-address" name="street-address" />
-            </label>
-          </fieldset>
-
-          <fieldset class="city">
-            <label>
-              City:
-              <input type="text" id="city" name="city" />
-            </label>
-            <label>
-              Zip Code:
-              <input type="text" id="zip-code" name="zip-code" />
-            </label>
-          </fieldset>
-
-          <div class="birth-gender">
-            <fieldset class="birth">
+            <div class="street">
               <label>
-                Bith Date (mm/dd/yyyy):
-                <input type="text" id="birth-date" name="birth-date" />
+                Street Address:
+                <input type="text" id="street-address" name="street-address" />
               </label>
-            </fieldset>
-            <fieldset class="gender">
-              <p>Gender:</p>
+            </div>
+            <div class="city">
               <label>
-                Female
-                <input type="radio" name="gender" id="female" value="female" />
+                City:
+                <input type="text" id="city" name="city" />
               </label>
               <label>
-                Male
-                <input type="radio" name="gender" id="male" value="male" />
+                Zip Code:
+                <input type="text" id="zip-code" name="zip-code" />
               </label>
-            </fieldset>
-          </div>
+            </div>
+            <div class="birth-gender">
+              <div class="birth">
+                <label>
+                  Bith Date (mm/dd/yyyy):
+                  <input type="text" id="birth-date" name="birth-date" />
+                </label>
+              </div>
+              <div class="gender">
+                <p>Gender:</p>
+                <label>
+                  Female
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  />
+                </label>
+                <label>
+                  Male
+                  <input type="radio" name="gender" id="male" value="male" />
+                </label>
+              </div>
+            </div>
+          </fieldset>
 
           <fieldset class="grade">
             <p>Grade:</p>
@@ -267,7 +270,7 @@
               </label>
               <label>
                 Date:
-                <input type="text" id="signing-date" name="signing-date" />
+                <input type="datetime" id="signing-date" name="signing-date" />
               </label>
             </fieldset>
           </div>
