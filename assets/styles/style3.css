@@ -202,20 +202,6 @@ table {
   align-items: center;
   width: 100px;
 }
-/*
-.gender{
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .birth-gender {
-  display: flex;
-  width: 100%;
-  margin-bottom: 1%;
-  padding-left: 15%;
-} */
 
 #space {
   margin-top: 50px;
@@ -226,9 +212,11 @@ table {
 }
 
 .phone {
-  width: 80vw;
+  text-align: center;
+  padding: 0 15%;
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-bottom: 10px;
 }
 
@@ -444,4 +432,9 @@ footer {
   padding: 15px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+}
+
+.more-info{
+  width: 100vw;
+  padding: 2% 15% 2% 15%;
 }
