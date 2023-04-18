@@ -41,7 +41,8 @@
         <h2>Registration Form</h2>
         <span class="underline-form"></span>
         <form action="./show_data.html" method="get">
-          <fieldset class="personnel">
+
+          <div class="personnel">
             <label>
               Player's First Name:
               <input type="text" id="first-name" name="first-name" />
@@ -50,22 +51,6 @@
               Last Name:
               <input type="text" id="last-name" name="last-name" />
             </label>
-            <div class="street">
-              <label>
-                Street Address:
-                <input type="text" id="street-address" name="street-address" />
-              </label>
-            </div>
-            <div class="city">
-              <label>
-                City:
-                <input type="text" id="city" name="city" />
-              </label>
-              <label>
-                Zip Code:
-                <input type="text" id="zip-code" name="zip-code" />
-              </label>
-            </div>
             <div class="birth-gender">
               <div class="birth">
                 <label>
@@ -90,8 +75,82 @@
                 </label>
               </div>
             </div>
-          </fieldset>
+            <div class="city">
+              <label>
+                City:
+                <input type="text" id="city" name="city" />
+              </label>
+              <label>
+                Zip Code:
+                <input type="text" id="zip-code" name="zip-code" />
+              </label>
+            </div>
+            <div class="street">
+              <label>
+                Street Address:
+                <input type="text" id="street-address" name="street-address" />
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
 
+          <!-- <fieldset class="personnel">
+            <div class="full-name">
+              <label>
+                Player's First Name:
+                <input type="text" id="first-name" name="first-name" />
+              </label>
+              <label>
+                Last Name:
+                <input type="text" id="last-name" name="last-name" />
+              </label>
+            </div> -->
+            <!-- <div class="birth-gender">
+              <div class="birth">
+                <label>
+                  Bith Date (mm/dd/yyyy):
+                  <input type="text" id="birth-date" name="birth-date" />
+                </label>
+              </div>
+              <div class="gender">
+                <p>Gender:</p>
+                <label>
+                  Female
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  />
+                </label>
+                <label>
+                  Male
+                  <input type="radio" name="gender" id="male" value="male" />
+                </label>
+              </div>
+            </div> -->
+            <!-- <div class="city">
+              <label>
+                City:
+                <input type="text" id="city" name="city" />
+              </label>
+              <label>
+                Zip Code:
+                <input type="text" id="zip-code" name="zip-code" />
+              </label>
+            </div>
+            <div class="street">
+              <label>
+                Street Address:
+                <input type="text" id="street-address" name="street-address" />
+              </label>
+            </div>
+          </fieldset> -->
+
+
+          <!--                                            -->
+<!--           
           <fieldset class="grade">
             <p>Grade:</p>
             <label>
@@ -278,7 +337,7 @@
           <input class="button" type="submit" value="SUBMIT" />
           <input class="button" type="reset" value="RESET" />
         </form>
-      </div>
+      </div> -->
 
       <footer>
         <p>Look for us on social media</p>

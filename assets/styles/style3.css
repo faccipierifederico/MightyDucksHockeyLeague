@@ -16,30 +16,39 @@
 }
 
 h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: none;
   color: rgb(241, 241, 228);
   font-size: 65px;
   font-family: Cambria;
   text-shadow: 2px 2px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
 }
 
-.nav-article nav {
+.nav-article nav{
+  width: 100%;
+  height: 80px;
+  padding: 0 7%;
   display: flex;
   justify-content: center;
   background: none;
+  /* border-bottom: 1px solid rgb(241, 241, 228); */
+  padding: 0 10%;
 }
 
-nav a {
+nav a{
   height: 30px;
   background: none;
   color: white;
   padding: 2%;
   text-decoration: none;
   border-bottom: 1px solid rgb(241, 241, 228);
+  height: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 nav a:hover {
@@ -58,18 +67,28 @@ nav a:hover {
 
 .img-container {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100vw;
 }
 
 .img {
   width: 35%;
   margin: 1.5%;
-  border: 1px solid;
+  max-height: 450px;
+  min-width: 350px;
+  max-width: 450px;
+  min-width: 350px;
 }
 
 .img img {
   width: 100%;
+  max-width: 500px;
+  min-width: 300px;
   height: 100%;
+  max-height: 500px;
+  min-width: 300px;
+  border: 1px solid;
 }
 
 .img-container .article {
@@ -103,7 +122,6 @@ nav a:hover {
 }
 
 .logo {
-  display: flex;
   position: fixed;
   bottom: 15px;
   right: 80px;
@@ -112,9 +130,8 @@ nav a:hover {
 
 .logo img {
   height: 7vh;
-  width: 3.5vw;
   background-color: black;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 .logo:hover {
@@ -268,7 +285,29 @@ li {
   margin-bottom: 50px;
 }
 
-.form {
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+
+form{
+  width: 90%;
+}
+
+.personnel{
+  width: 100%;
+}
+
+/* form label{
+  width: 100%;
+} */
+
+/* 
+.form{
   border: 1px solid;
   width: 100vw;
   display: flex;
@@ -277,7 +316,8 @@ li {
   align-items: center;
 }
 
-form {
+form{
+  width: 80%;
   border: 1px solid;
   padding: 2%;
   display: flex;
@@ -296,12 +336,25 @@ form {
   width: 100px;
 }
 
-fieldset {
+/* fieldset {
   border: none;
-  padding: 20px;
-  width: 50vw;
-  justify-content: center;
-  align-content: center;
+}
+
+.personnel{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+}
+
+.full-name, .city, .birth-gender{
+  padding: 0 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 input {
@@ -318,18 +371,21 @@ input:focus {
 
 .personnel,
 .city {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.personnel {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+ .personnel label{
+  width: 40%;
 }
 
 .personnel input {
-  width: 17vw;
+  width: auto;
 }
 
 .city input {
@@ -337,6 +393,7 @@ input:focus {
 }
 
 .street {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -390,11 +447,11 @@ input:focus {
 
 .button:hover {
   color: rgb(241, 241, 228);
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: none;
   border-radius: 10px;
   border: 1px solid #4b0f15;
-}
+} */
 
 .locations {
   display: flex;
@@ -437,4 +494,15 @@ footer {
 .more-info{
   width: 100vw;
   padding: 2% 15% 2% 15%;
+}
+
+
+@media (max-width: 999px) {
+  h1{
+    font-size: 45px;
+  }
+
+  .nav-article nav{
+    padding: 0 0%;
+  }
 }
