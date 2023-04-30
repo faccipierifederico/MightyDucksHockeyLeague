@@ -24,6 +24,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   height: 500px;
 }
 
@@ -66,10 +67,11 @@ nav a:hover {
 }
 
 .img-container {
+  padding: 0 3%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .img {
@@ -91,7 +93,7 @@ nav a:hover {
   border: 1px solid;
 }
 
-.img-container .article {
+.article {
   display: flex;
   flex-direction: column;
   margin: 3%;
@@ -110,11 +112,6 @@ nav a:hover {
 
 .article h3 {
   padding-top: 3%;
-  padding-left: 3%;
-}
-
-.article p {
-  padding-left: 5%;
 }
 
 .p-contact {
@@ -138,10 +135,6 @@ nav a:hover {
   transform: scale(3) translateX(-15px) translateY(-15px);
 }
 
-.italic {
-  padding-left: 5%;
-}
-
 .mail {
   font-weight: bold;
   color: #191c32;
@@ -149,7 +142,7 @@ nav a:hover {
 }
 
 .table-container {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -159,6 +152,10 @@ nav a:hover {
   padding-left: 15%;
 }
 
+.table-info{
+  padding-left: 0;
+}
+
 .sub-table {
   margin-top: 10px;
   padding-left: 15%;
@@ -166,14 +163,14 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.underline-table {
+/* .underline-table {
   margin-left: 15%;
   height: 3px;
   width: 50px;
   background-color: red;
   margin-top: 5px;
   margin-bottom: 25px;
-}
+} */
 
 .tr-one {
   background-color: rgb(134, 134, 117);
@@ -182,11 +179,9 @@ nav a:hover {
 
 th,
 td {
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  text-align: center;
+  width: 150px;
+  padding: 20px 0;
 }
 
 table {
@@ -195,12 +190,6 @@ table {
 
 .center {
   text-align: center;
-}
-
-.birth-gender {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .birth label {
@@ -231,10 +220,14 @@ table {
 .phone {
   text-align: center;
   padding: 0 15%;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 10px;
+}
+
+.phone a{
+  text-decoration: none;
 }
 
 .mail {
@@ -254,13 +247,15 @@ ul li {
   list-style: circle;
 }
 
-.rules {
-  padding-left: 5%;
+/*              RULES & POLICIES               */
+
+.rules-main{
+  padding: 0 5%;
 }
 
 .rules h2 {
   margin: 1%;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 ol {
@@ -285,6 +280,8 @@ li {
   margin-bottom: 50px;
 }
 
+/*              REGISTRATION               */
+
 .form{
   width: 100%;
   display: flex;
@@ -294,40 +291,13 @@ li {
   padding: 2% 0;
 }
 
-form{
-  width: 90%;
+.form-info{
+  padding: 0%;
+  padding-bottom: 3%;
 }
 
-.personnel{
-  width: 100%;
-}
-
-/* form label{
-  width: 100%;
-} */
-
-/* 
-.form{
-  border: 1px solid;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-form{
-  width: 80%;
-  border: 1px solid;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin: 30px 0;
-}
-
-.form h2 {
-  margin-top: 15px;
+.sub-info{
+  font-size: smaller;
 }
 
 .underline-form {
@@ -336,81 +306,82 @@ form{
   width: 100px;
 }
 
-/* fieldset {
-  border: none;
+.underline-form-info{
+  width: 70px;
+}
+
+form{
+  width: 90%;
+  margin-top: 25px;
+  border: 1px solid black;
 }
 
 .personnel{
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 5%;
+  padding: 10px;
 }
 
-.full-name, .city, .birth-gender{
-  padding: 0 10%;
+.personnel div{
+  padding: 10px;
+}
+
+.full-name2, .city{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-input {
-  padding: 10px;
+.full-name2 label, .city label{
+  width: 30%;
+  border: none;
+}
+
+.personnel input{
+  width: 100%;
   border: none;
   border-bottom: 1px solid #191c32;
-  text-align: center;
+  padding: 5px;
 }
 
-input:focus {
+.personnel input:focus, .signature input:focus {
   background-color: #191c32;
   color: rgb(241, 241, 228);
 }
 
-.personnel,
-.city {
+.birth-gender{
   width: 100%;
   display: flex;
-  gap: 15px;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
- .personnel label{
-  width: 40%;
-}
-
-.personnel input {
-  width: auto;
-}
-
-.city input {
-  width: 20vw;
-}
-
-.street {
-  width: 100%;
-  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
-.street input {
-  width: 41vw;
+.birth-gender p{
+  font-weight: bold;
 }
 
-.grade,
-.position,
-.uniform-size {
-  width: 100%;
+.birth-gender label{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  width: auto;
+  padding: 0 10px;
+  gap: 10px;
 }
 
-.near-school select {
+.near-school, .near-school h3{
+  padding: 20px;
+}
+
+.school{
+  text-align: center;
+}
+
+.school select {
   margin: 0px 10px;
   padding: 5px;
   border-radius: 10px;
@@ -418,25 +389,50 @@ input:focus {
   color: rgb(241, 241, 228);
 }
 
-.end-form {
-  width: 50vw;
+.uniform{
+  flex-wrap: wrap;
 }
 
-.signature {
+.end-form{
+  padding: 25px 25px 0;
+}
+
+.end-form h4{
+  text-align: center;
+  font-size: 20px;
+}
+
+.end-form p{
+  margin-top: 15px;
+}
+
+.signature{
+  width: 100%;
+  padding: 15px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
 }
 
-.signature input {
-  width: 17vw;
+.signature input{
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+.buttons{
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
 
 .button {
   color: black;
   width: 150px;
   background: rgb(241, 241, 228);
-  align-items: center;
-  align-self: center;
   border-radius: 10px;
   border: 1px solid black;
   padding: 7px;
@@ -451,12 +447,44 @@ input:focus {
   border: none;
   border-radius: 10px;
   border: 1px solid #4b0f15;
-} */
+}
+
+/*              END REGISTRATION               */
+
+/*              GAME INFORMATION               */
+
+.game-info-main{
+  padding: 1.5% 2%;
+}
+
+.info{
+  padding-left: 10%;
+}
+
+.underline-info{
+  height: 3px;
+  width: 50px;
+  background-color: red;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
 
 .locations {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 100%;
+}
+
+.games-loc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.games-location{
+  padding: 0% 10%;
 }
 
 .greenbay,
@@ -476,7 +504,7 @@ input:focus {
 }
 
 iframe {
-  width: 30vw;
+  width: 100%;
   height: 30vh;
   margin: 15px;
   box-shadow: 2px 2px 5px black;
@@ -492,12 +520,19 @@ footer {
 }
 
 .more-info{
-  width: 100vw;
+  width: 100%;
   padding: 2% 15% 2% 15%;
 }
 
 
 @media (max-width: 999px) {
+  .logo {
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    background: none;
+  }
+
   h1{
     font-size: 45px;
   }
@@ -505,4 +540,169 @@ footer {
   .nav-article nav{
     padding: 0 0%;
   }
+
+  .birth-gender{
+    align-items: center;
+    justify-content: center;
+    max-height: 60px;
+  }
+
+  .near-school{
+    padding: 25px 20px 0;
+  }
+  .near-school h3{
+    padding: 5px 20px;
+  }
+
+  .end-form{
+    padding: 25px 25px 0;
+  }
 }
+
+@media (max-width: 879px){
+  iframe {
+    width: 100%;
+    height: 250px;
+    margin: 15px;
+    box-shadow: 2px 2px 5px black;
+  }
+
+  .locations div{
+    width: 100%;
+  }
+
+  .more-info, .phone{
+    text-align: center;
+    padding-top: 4%;
+  }
+
+}
+
+@media (max-width: 775px){
+  .underline {
+    align-self: center;
+  }
+
+  h1{
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .full-name2, .city{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .near-school h3{
+    text-align: center;
+    font-size: 17px;
+  }
+  
+  .full-name2 label, .city label, .signature label{
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  .signature{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+  }
+
+  .signature input{
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #191c32;
+      padding: 5px;
+      text-align: center;
+  }
+
+  .buttons{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .button{
+    width: 100px;
+    font-size: 15px;
+  }
+
+  .near-school p{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .locations div{
+    width: 75%;
+    height: 35vh;
+  }
+
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+
+  .table {
+    padding-top: 4%;
+    padding-left: 0%;
+    text-align: center;
+  }
+
+  .game-info-main{
+    text-align: center;
+  }
+
+  .underline-form{
+    display: block;
+    height: 3px;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+
+  .sub-table {
+    margin-top: 10px;
+    padding-left: 0;
+    font-style: normal;
+    text-decoration: underline;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 599px){
+  .phone{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .games-location{
+    padding: 0% 0%;
+  }
+}
+
+
+/* REGISTRATION, RULES and GAME INFO ARE DONE */

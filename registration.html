@@ -43,22 +43,21 @@
         <form action="./show_data.html" method="get">
 
           <div class="personnel">
-            <label>
-              Player's First Name:
-              <input type="text" id="first-name" name="first-name" />
-            </label>
-            <label>
-              Last Name:
-              <input type="text" id="last-name" name="last-name" />
-            </label>
+            <div class="full-name2">
+              <label>
+                Player's First Name:
+                <input type="text" id="first-name" name="first-name" />
+              </label>
+              <label>
+                Last Name:
+                <input type="text" id="last-name" name="last-name" />
+              </label>
+              <label>
+                Bith Date (mm/dd/yyyy):
+                <input type="text" id="birth-date" name="birth-date" />
+              </label>
+            </div>
             <div class="birth-gender">
-              <div class="birth">
-                <label>
-                  Bith Date (mm/dd/yyyy):
-                  <input type="text" id="birth-date" name="birth-date" />
-                </label>
-              </div>
-              <div class="gender">
                 <p>Gender:</p>
                 <label>
                   Female
@@ -73,7 +72,6 @@
                   Male
                   <input type="radio" name="gender" id="male" value="male" />
                 </label>
-              </div>
             </div>
             <div class="city">
               <label>
@@ -84,74 +82,13 @@
                 Zip Code:
                 <input type="text" id="zip-code" name="zip-code" />
               </label>
-            </div>
-            <div class="street">
               <label>
                 Street Address:
                 <input type="text" id="street-address" name="street-address" />
               </label>
             </div>
           </div>
-        </form>
-      </div>
-
-          <!-- <fieldset class="personnel">
-            <div class="full-name">
-              <label>
-                Player's First Name:
-                <input type="text" id="first-name" name="first-name" />
-              </label>
-              <label>
-                Last Name:
-                <input type="text" id="last-name" name="last-name" />
-              </label>
-            </div> -->
-            <!-- <div class="birth-gender">
-              <div class="birth">
-                <label>
-                  Bith Date (mm/dd/yyyy):
-                  <input type="text" id="birth-date" name="birth-date" />
-                </label>
-              </div>
-              <div class="gender">
-                <p>Gender:</p>
-                <label>
-                  Female
-                  <input
-                    type="radio"
-                    name="gender"
-                    id="female"
-                    value="female"
-                  />
-                </label>
-                <label>
-                  Male
-                  <input type="radio" name="gender" id="male" value="male" />
-                </label>
-              </div>
-            </div> -->
-            <!-- <div class="city">
-              <label>
-                City:
-                <input type="text" id="city" name="city" />
-              </label>
-              <label>
-                Zip Code:
-                <input type="text" id="zip-code" name="zip-code" />
-              </label>
-            </div>
-            <div class="street">
-              <label>
-                Street Address:
-                <input type="text" id="street-address" name="street-address" />
-              </label>
-            </div>
-          </fieldset> -->
-
-
-          <!--                                            -->
-<!--           
-          <fieldset class="grade">
+          <div class="birth-gender">
             <p>Grade:</p>
             <label>
               Pre-School
@@ -182,129 +119,135 @@
               5th
               <input type="radio" name="grade" id="fiveth" value="fiveth" />
             </label>
-          </fieldset>
+          </div>
 
-          <h3>Which elementary school do you live near?</h3>
-          <h4>Closest School</h4>
+          <div class="near-school">
+            <h3>Which elementary school do you live near?</h3>
 
-          <fieldset class="near-school">
-            <label for="near-school">Please, select the nearest school</label>
-            <select name="near-school" id="near-school">
-              <option value="aj-katzenmaier">AJ Katzenmaier</option>
-              <option value="greenbay">Greenbay</option>
-              <option value="howard-a-yaeger">Howard A Yaeger</option>
-              <option value="marjorie-p-hart">Marjorie P Hart</option>
-              <option value="north-elementary">North Elementary</option>
-              <option value="south-elementary">South Elementary</option>
-            </select>
-          </fieldset>
+            <div class="school">
+              <label for="near-school">Please, select the nearest school</label>
+              <select name="near-school" id="near-school">
+                <option value="aj-katzenmaier">AJ Katzenmaier</option>
+                <option value="greenbay">Greenbay</option>
+                <option value="howard-a-yaeger">Howard A Yaeger</option>
+                <option value="marjorie-p-hart">Marjorie P Hart</option>
+                <option value="north-elementary">North Elementary</option>
+                <option value="south-elementary">South Elementary</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="near-school">
+            <h3>What position(s) do you normally play?</h3>
+            <p>Please, check all that apply</p>
+            <div class="birth-gender">
+              <label>
+                Forward
+                <input
+                  type="checkbox"
+                  name="position"
+                  id="forward"
+                  value="forward"
+                />
+              </label>
+              <label>
+                Defense
+                <input
+                  type="checkbox"
+                  name="position"
+                  id="defense"
+                  value="defense"
+                />
+              </label>
+              <label>
+                Midfield
+                <input
+                  type="checkbox"
+                  name="position"
+                  id="midfield"
+                  value="midfield"
+                />
+              </label>
+              <label>
+                Goalkeeper
+                <input
+                  type="checkbox"
+                  name="position"
+                  id="goalkeeper"
+                  value="goalkeeper"
+                />
+              </label>
+            </div>
+          </div>
 
-          <h3>What position(s) do you normally play? (Check all that apply)</h3>
-          <fieldset class="position">
-            <label>
-              Forward
-              <input
-                type="checkbox"
-                name="position"
-                id="forward"
-                value="forward"
-              />
-            </label>
-            <label>
-              Defense
-              <input
-                type="checkbox"
-                name="position"
-                id="defense"
-                value="defense"
-              />
-            </label>
-            <label>
-              Midfield
-              <input
-                type="checkbox"
-                name="position"
-                id="midfield"
-                value="midfield"
-              />
-            </label>
-            <label>
-              Goalkeeper
-              <input
-                type="checkbox"
-                name="position"
-                id="goalkeeper"
-                value="goalkeeper"
-              />
-            </label>
-          </fieldset>
-
-          <h3>Uniform Size</h3>
-          <fieldset class="uniform-size">
-            <label>
-              Youth Small
-              <input
-                type="radio"
-                name="uniform-size"
-                id="youth-small"
-                value="youth-small"
-              />
-            </label>
-            <label>
-              Youth Medium
-              <input
-                type="radio"
-                name="uniform-size"
-                id="youth-medium"
-                value="youth-medium"
-              />
-            </label>
-            <label>
-              Youth Large
-              <input
-                type="radio"
-                name="uniform-size"
-                id="youth-large"
-                value="youth-large"
-              />
-            </label>
-            <label>
-              Small
-              <input
-                type="radio"
-                name="uniform-size"
-                id="small"
-                value="small"
-              />
-            </label>
-            <label>
-              Medium
-              <input
-                type="radio"
-                name="uniform-size"
-                id="medium"
-                value="medium"
-              />
-            </label>
-            <label>
-              Large
-              <input
-                type="radio"
-                name="uniform-size"
-                id="large"
-                value="large"
-              />
-            </label>
-            <label>
-              Extra Large
-              <input
-                type="radio"
-                name="uniform-size"
-                id="extra-large"
-                value="extra-large"
-              />
-            </label>
-          </fieldset>
+          <div class="near-school">
+            <h3>Uniform Size</h3>
+            <div class="birth-gender uniform">
+              <label>
+                Youth Small
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  id="youth-small"
+                  value="youth-small"
+                />
+              </label>
+              <label>
+                Youth Medium
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  id="youth-medium"
+                  value="youth-medium"
+                />
+              </label>
+              <label>
+                Youth Large
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  id="youth-large"
+                  value="youth-large"
+                />
+              </label>
+              <label>
+                Small
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  id="small"
+                  value="small"
+                />
+              </label>
+              <label>
+                Medium
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  id="medium"
+                  value="medium"
+                />
+              </label>
+              <label>
+                Large
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  id="large"
+                  value="large"
+                />
+              </label>
+              <label>
+                Extra Large
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  id="extra-large"
+                  value="extra-large"
+                />
+              </label>
+            </div>
+          </div>
 
           <div class="end-form">
             <h4>Permission to play</h4>
@@ -322,7 +265,7 @@
               also acknowledge that I have read the cancellation policy and
               agree to its terms.
             </p>
-            <fieldset class="signature">
+            <div class="signature">
               <label>
                 Parent/Guardian Signature:
                 <input type="text" id="signature" name="signature" />
@@ -331,13 +274,15 @@
                 Date:
                 <input type="date" id="signing-date" name="signing-date" />
               </label>
-            </fieldset>
+            </div>
           </div>
 
-          <input class="button" type="submit" value="SUBMIT" />
-          <input class="button" type="reset" value="RESET" />
+          <div class="buttons">
+            <input class="button" type="submit" value="SUBMIT" />
+            <input class="button" type="reset" value="RESET" />
+          </div>
         </form>
-      </div> -->
+      </div>
 
       <footer>
         <p>Look for us on social media</p>
